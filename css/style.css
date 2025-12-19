@@ -35,9 +35,14 @@
             display: flex;
             align-items: center;
             gap: 0.8rem;
+            flex: 1;
         }
 
-        .logo-icon {
+        .logo img {
+            max-height: 100px;
+            width: auto;
+            object-fit: contain;
+        }
             width: 40px;
             height: 40px;
             background: #c4a77d;
@@ -537,6 +542,16 @@
             margin-left: 60px;
         }
 
+        .info-card p a {
+            color: #4b5563;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .info-card p a:hover {
+            color: #c4a77d;
+        }
+
         .hours-card {
             background: #c4a77d;
             color: #fff;
@@ -615,6 +630,12 @@
         .footer-about p {
             line-height: 1.7;
             color: #94a3b8;
+        }
+
+        .footer-logo {
+            max-height: 80px;
+            width: auto;
+            object-fit: contain;
         }
 
         .footer-section h4 {
