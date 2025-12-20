@@ -43,17 +43,6 @@
             width: auto;
             object-fit: contain;
         }
-            width: 40px;
-            height: 40px;
-            background: #c4a77d;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            color: #fff;
-            line-height: 1;
-        }
 
         .logo-icon i {
             display: flex;
@@ -667,6 +656,17 @@
             padding-top: 2rem;
             text-align: center;
             color: #64748b;
+        }
+
+        .footer-bottom a {
+            color: #c4a77d;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-bottom a:hover {
+            color: #d4b896;
+            text-decoration: underline;
         }
 
         .social-footer {

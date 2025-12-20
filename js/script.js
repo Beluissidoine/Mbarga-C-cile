@@ -30,6 +30,15 @@
         // Form submission
         document.getElementById('contactForm').addEventListener('submit', (e) => {
             e.preventDefault();
+            
+            // Bot protection - check honeypot field
+            const honeypot = document.getElementById('website').value;
+            if (honeypot) {
+                // If honeypot is filled, it's a bot - silently ignore
+                console.log('Bot detected');
+                return;
+            }
+            
             alert('Merci pour votre message ! Nous vous contacterons très bientôt.');
             e.target.reset();
         });
